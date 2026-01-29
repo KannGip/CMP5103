@@ -58,5 +58,16 @@ The augmented model shows consistent gains, especially in **Macro F1-score** (wh
 
 ## Requirements
 
+The project was developed and tested with the following core Python packages:
+
 ```bash
-pip install transformers torch pandas scikit-learn openai
+# Core ML / Transformers
+pip install transformers==4.44.2          # Hugging Face Transformers (BERT support)
+pip install torch==2.4.1                  # PyTorch (with CUDA if using GPU)
+
+# Data handling & utilities
+pip install pandas==2.2.2
+pip install scikit-learn==1.5.1           # For metrics (f1_score, etc.)
+
+# OpenAI API for paraphrase augmentation
+pip install openai==1.40.0                # Official OpenAI Python client
